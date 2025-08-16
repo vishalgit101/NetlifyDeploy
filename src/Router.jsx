@@ -14,7 +14,7 @@ import CreateNote from "./components/Notes/CreateNote";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import AccessDenied from "./components/Auth/AccessDenied";
-import Admin from "./components/AuditLogs/Admin";
+import Admin from "./components/Auditlogs/Admin";
 import UserProfile from "./components/Auth/UserProfile";
 import ForgotPassword from "./components/Auth/ForgotPassword";
 import OAuth2RedirectHandler from "./components/Auth/OAuth2RedirectHandler";
