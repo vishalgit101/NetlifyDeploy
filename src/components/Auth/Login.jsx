@@ -106,7 +106,14 @@ const Login = () => {
   const onLoginHandler = async (data) => {
     try {
       setLoading(true);
-      const response = await api.post("/auth/public/signin", data); // changed it to signin to login, data has all the data of the form
+
+      // normalizedData
+      const normalizedData = {
+        ...data,
+        username: data.username?.trim().toLowerCase(),
+      };
+
+      const response = await api.post("/auth/public/signin", normalizedData); // changed it to signin to login, data has all the data of the form
 
       console.log(response);
       //showing success message with react hot toast
